@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/listar_informacion/" method="get">
+        <table border="1"
+            <thead>
+                <th>id</th>
+                <th>Nombre</th>
+                <th>Apellido paterno</th>
+                <th>Apellido materno</th>
+                <th>Rut</th>
+                <th>Edad</th>
+                <th>Nombre vacuna</th>
+                <th>Fecha</th>
+            </thead>
+            {% if informacion %}
+            {% for info in informacion %}
+            <tbody>
+                <td>{{info.id}}</td>
+                <td>{{info.nombre}}</td>
+                <td>{{info.apparteno}}</td>
+                <td>{{info.apmaterno}}</td>
+                <td>{{info.rut}}</td>
+                <td>{{info.edad}}</td>
+                <td>{{info.nombre_vacuna}}</td>
+                <td>{{info.fecha}}</td>
+            </tbody>
+            {% endfor %}
+            {% endif %}
+        </table>
+        <input type="submit" value="Listar">
+    </form>
+</body>
+</html>
