@@ -42,5 +42,5 @@ def buscar(request):
         informacion = Informacion.objects.filter(rut__icontains=persona)
         return render(request,"buscador.html",{"informacion":informacion,"query":persona})
     else:
-        mensaje = "Debe ingresar un nombre de producto"
+        mensaje = "Debe ingresar un rut valido..."
         return HttpResponse(mensaje+"<br><a href='/index/'>Volver al inicio</a>")
