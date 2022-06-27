@@ -1,0 +1,39 @@
+.f{
+    background-color: rgb(228, 224, 224);   
+}
+
+.formu{
+    background-color: rgb(170, 169, 169);
+    color: black;
+    border: 1.5px black solid;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.fchico{
+    border: none;
+    border-bottom: 1.6px solid black;
+    background-color: rgb(170, 169, 169);
+    color: black;
+    margin-left: 4px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+.aaaa{
+    background-color: rgb(170, 169, 169);
+    color: black;
+    border: 1.5px black solid;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+/* era pa arreglar la foto de fondo
+.aa{
+    margin-top: 0px;
+}
+*/
