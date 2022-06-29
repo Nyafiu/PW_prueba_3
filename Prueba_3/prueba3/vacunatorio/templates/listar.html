@@ -31,9 +31,9 @@
 
     <form action="/listar_informacion/" method="get" class="formu">
       <table class="table">
-        <thead>
+        <thead style="text-align:center;">
           <tr>
-            <th>id</th>
+            <th>ID</th>
             <th>Nombre</th>
             <th>Apellido paterno</th>
             <th>Apellido materno</th>
@@ -45,7 +45,7 @@
         </thead>
         {% if informacion %}
         {% for info in informacion %}
-        <tbody>
+        <tbody style="text-transform: uppercase; text-align: center;">
           <td>{{info.id}}</td>
           <td>{{info.nombre}}</td>
           <td>{{info.apparteno}}</td>

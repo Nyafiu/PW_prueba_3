@@ -27,35 +27,35 @@
     <br><br>
     <center>
         <h5 class="display-7">Rut ingresado: {{query}}</h5><br>
-        <table border="1">
+        <table style="text-transform: uppercase;" border="1">
             {% if informacion  %}
                 {% for cliente in informacion %}        
                 <tr>
-                <td>nombre</td> 
+                <td>Nombre:</td> 
                 <td>{{cliente.nombre}}</td>
                 </tr>
                 <tr>
-                    <td>Apellido paterno</td>
+                    <td>Apellido paterno:</td>
                     <td>{{cliente.apparteno}}</td>
                 </tr>
                 <tr>
-                    <td>Apellido materno</td>
+                    <td>Apellido materno:</td>
                     <td>{{cliente.apmaterno}}</td>
                 </tr>
                 <tr>
-                    <td>Rut</td>
+                    <td>Rut:</td>
                     <td>{{cliente.rut}}</td>
             </tr>
             <tr>
-                    <td>Edad</td>
+                    <td>Edad:</td>
                     <td>{{cliente.edad}}</td>
                 </tr>
                 <tr>
-                    <td>Nombre vacuna</td>
+                    <td>Nombre vacuna:</td>
                     <td>{{cliente.nombre_vacuna}}</td>
                 </tr>
                 <tr>
-                    <td>Fecha</td>
+                    <td>Fecha:</td>
                     <td>{{cliente.fecha}}</td>
                 </tr>
             
